@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /*
+        行内元素
+            无法设置宽高，宽高由内容所决定，一行有很多元素
+        块元素
+            独占一行，可以设置宽高
+        行内块元素
+            可以设置宽高，一行有多个
+        三者可通过display互相转换
+    */
+    .box3>div{
+        display:inline-block;
+        height:300px;
+        width:300px;
+        background:red;
+    }
+    .box1,.box2{
+        display:inline;
+    }
+
+</style>
+<body>
+    <div class="box1">块级元素,默认display:block;</div>
+    <div class="box2">
+        <span>行内元素1,默认display:inline;</span>
+        <span>行内元素1,默认display:inline;</span>
+        <span>行内元素1,默认display:inline;</span>
+    </div>
+    <div class="box3">
+        <div>块级元素转为行内块</div>
+        <div>块级元素转为行内块</div>
+        <div>块级元素转为行内块</div>
+    </div>
+</body>
+</html>

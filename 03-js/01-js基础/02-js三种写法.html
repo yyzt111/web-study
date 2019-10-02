@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1.直接把js写在script标签中
+        2 js写入外部文件 后缀为.js（建议使用）  script src属性引入
+            js文件不可以直接打开，因为js代码只能运行在浏览器中
+            一个页面中可以有多个script标签
+        3 写在HTML中（不建议）
+
+        script标签应该放在哪？
+            想要让页面性能更好，最好的方法，就是将script标签放在body闭合标签之前
+     -->
+     <script>alert('hello world')</script>
+     
+     <script src="./03-demo.js"></script>
+     
+     <a href="javascript:alert('hello everybody')">a</a>
+     <button onclick="alert('hello everybody')">点击弹出文字</button>
+</body>
+</html>

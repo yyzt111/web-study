@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>文字设置</title>
+    <style>
+        /* font: weight style size / line-height family color;
+            font-size:; 大小
+
+            color:;   颜色
+
+            font-weight:; 加粗     
+            100-900  
+            normal 400
+            bold 700
+
+            line-height:;  行高
+            利用行高可以设置单行字体垂直居中，让行高和块级元素一样高即可
+            当字体大小为16px时以下四种行高的表达效果一样
+            固定值 16px
+            相对值 1em   相对于父元素字体大小的单位
+            倍数  1
+            百分比 100%
+            font-family:;  字体    可设置多个字体优先选择第一个
+
+            font-style:;   倾斜
+            italic
+                <i></i>
+                <em></em>
+         */
+    body{
+        background:red;
+        font:40px bold 24px/100% "微软雅黑";
+    }
+    p{
+        font-size:16px;
+        line-height:1em;
+        color:blue;
+    }
+    .down{
+        font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        font-weight:normal;
+        color:yellow;
+    }
+    #big{
+        background:100px black;
+        color:#11919a;
+        font-size:16px;
+        line-height:200px;
+    }
+    div{
+        height:200px;
+    }
+    </style>
+</head>
+<body>
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <p>出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发出发</p>  
+    <div class="down">百日依山尽</div>
+    <div>黄河入海流</div>
+    <div id="big">内容内容</div>
+</body>

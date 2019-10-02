@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>样式优先级</title>
+</head>
+<style>
+    /*
+    如果选择器类型相同，那么下面的样式会覆盖上面的样式
+    */
+    .name{
+        color:red;
+        font-size:24px;
+    }
+    .name{
+        color:blue;
+        font-size:24px;
+    }
+    /*
+    如果选择器类型不同，有着重度
+    着重度越高，优先级越高
+    id选择器   100
+    class       10
+    tagname标签  1
+    */
+    .font{
+        font-size:30px;
+        color:green;
+    }
+    .font#font{
+        font-size:30px;
+        color:blueviolet;
+    }
+    body #font{
+        font-size:30px;
+        color:rgb(128, 105, 0);
+    }
+</style>
+<body>
+    <p class="name">内容内容内容内容内容内容内容</p>
+    <p class="font" id="font">文字文字文字文字文字</p>
+</body>
+</html>

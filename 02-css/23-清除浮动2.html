@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+            使用伪元素可以快速的在某元素的闭合标签之前加上一个::after
+            闭合浮动
+
+            什么时候需要清除浮动
+                只要父元素内部所有子元素都浮动（父元素高度为0，或者高度小于子元素总高度时），就要清除浮动
+
+
+            clear属性，只能限制在添加clear属性元素之前的元素（html结构）
+     */
+    .clear:after{
+        content:"";
+        display:block;
+        clear:both;
+        height:0px;
+        line-height:0px;
+        visibility:hidden;
+    }
+    .clear{
+        zoom:1;
+    }
+     .a{
+        width:100px;
+        height:100px;
+        background:rgb(92, 82, 82);
+        float:left;
+    }
+    .b{
+        width:100px;
+        height:100px;
+        background:rgb(17, 16, 16);
+        float:left;
+    }
+    .c{
+        width:100px;
+        height:100px;
+        background:rgb(68, 18, 18);
+        float:left;
+        clear:left;
+    }
+</style>
+<body>
+    <!-- 伪元素清除浮动，效果：只是把父元素撑起来了该浮动还是浮动 -->
+    <div class="clear">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body,ul,li{
+        margin:0;
+        padding:0;
+    }
+    body{
+        position:relative;
+    }
+    .a{
+        list-style-type:none;
+        background:#525c63;
+        width:234px;
+        /* position:relative; */
+    }
+    a{
+        color:white;
+        text-decoration:none;
+    }
+    .a>li{
+        color:white;
+        text-align:center;
+        padding:10px 3px;
+        display:block;   
+    }
+    .a>li:hover{
+        background:#ff6600;
+    }
+    .menu{
+        list-style-type:none;
+        background:#000;
+        color:white;
+        display:none;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:234px;
+        width:500px;
+    }
+    .a>li:hover .menu{
+        display:block;
+    }
+</style>
+<body>
+    <ul class="a">
+        <li><a href="#home">手机&nbsp;电话卡</a>
+            <ul class="menu">
+                <li>1</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>笔记本
+            <ul class="menu">
+                <li>2</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>电脑&nbsp;盒子
+            <ul class="menu">
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>路由器&nbsp;智能硬件
+            <ul class="menu">
+                <li>4</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>移动电源&nbsp;电池&nbsp;插线板
+            <ul class="menu">
+                <li>5</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>耳机&nbsp;音响
+            <ul class="menu">
+                <li>6</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>保护套&nbsp;贴膜
+            <ul class="menu">
+                <li>7</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>线材&nbsp;支架&nbsp;存储卡
+            <ul class="menu">
+                <li>9</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>箱包&nbsp;服饰&nbsp;鞋&nbsp;眼镜
+            <ul class="menu">
+                <li>10</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="a">
+        <li>米兔&nbsp;生活周边
+            <ul class="menu">
+                <li>11</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

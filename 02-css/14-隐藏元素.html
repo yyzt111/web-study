@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.father{
+    width:100px;
+    height:100px;
+    border:1px solid;
+}
+/* display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。
+ visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。
+ */
+.father span{
+    display:none;
+}
+.father:active span{
+    display:inline;
+}
+</style>
+<body>
+    <div class="father">
+        <span>内容</span>
+    </div>
+    
+</body>
+</html>

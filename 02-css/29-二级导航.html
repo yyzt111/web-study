@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+    }
+    .a{
+        height:50px;
+        line-height:50px;
+        background:#4a4a4a;
+        color:#fff;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+    }
+    .a>li{
+        display:inline-block;
+        margin:0;
+        padding:0px 10px;
+        position:relative;
+    }
+    .a>li:hover{
+        background:#333;
+    }
+    .menu{
+        background:#4a4a4a;
+        color:#fff;
+        height:200px;
+        width:200px;
+        display:none;
+        padding:0;
+        text-align:center;
+        position:absolute;
+        left:0;
+        
+    }
+    .menu>li{
+        list-style-type:none;
+        margin:0px;
+        padding:0;
+    }
+    .a>li:hover .menu{
+        display:block;
+    }
+    .menu>li:hover{
+        background:#333;
+    }
+</style>
+<body>
+    <ul class="a">
+        <li>导航1
+            <ul class="menu">
+                <li>菜单1</li>
+                <li>菜单2</li>
+                <li>菜单3</li>
+                <li>菜单4</li>
+            </ul>
+        </li>
+        <li>导航2
+            <ul class="menu">
+                <li>菜单21</li>
+                <li>菜单22</li>
+                <li>菜单23</li>
+                <li>菜单24</li>
+            </ul>
+        </li>
+        <li>导航3
+            <ul class="menu">
+                <li>菜单31</li>
+                <li>菜单32</li>
+                <li>菜单33</li>
+                <li>菜单34</li>
+            </ul>
+        </li>
+        <li>导航4
+            <ul class="menu">
+                <li>菜单41</li>
+                <li>菜单42</li>
+                <li>菜单43</li>
+                <li>菜单44</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

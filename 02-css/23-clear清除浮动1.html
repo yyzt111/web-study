@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clear</title>
+</head>
+<style>
+    /* body{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+    } */
+    .a{
+        width:100px;
+        height:100px;
+        background:rgb(92, 82, 82);
+        float:left;
+    }
+    .b{
+        width:100px;
+        height:100px;
+        background:rgb(17, 16, 16);
+        float:left;
+        clear:both;
+    }
+    .c{
+        width:100px;
+        height:100px;
+        background:rgb(68, 18, 18);
+        float:left;
+        clear:both;
+    }
+    /* .e{
+        clear:both; 
+        为了清除浮动，需要在对应浮动元素的父元素的闭合标签之前添加一个块元素，然后将高度设置为0，设置属性clear: both
+        弊端：
+            更改了html结构，不方便
+    } */
+</style>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <!-- <div class="e"></div> -->
+</body>
+</html>

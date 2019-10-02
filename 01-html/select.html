@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select</title>
+</head>
+<body>
+    <!-- 单选 -->
+    <!-- disabled禁止用下拉菜单 -->
+    <select disabled="ture">
+        <option value="">请选择</option>
+        <option value="aaa">汉族</option>
+        <option value="bbb">回族</option>
+        <option balue="ccc">蒙古族</option>
+    </select>
+    <select size="2">
+        <option value="">请选择</option>
+        <option value="aaa">汉族</option>
+        <option value="bbb">回族</option>
+        <option balue="ccc">蒙古族</option>
+    </select>
+    <!-- 多选 -->
+    <select multiple>
+        <option value="a">春</option>
+        <option value="b">夏</option>
+        <option value="c">秋</option>
+        <option value="d">冬</option>
+    </select>
+    <!-- 配合lable使用 -->
+    <label for="abc">喜欢哪个季节？</label>
+    <select multiple id="abc">
+        <option value="a">春</option>
+        <option value="b">夏</option>
+        <option value="c">秋</option>
+        <option value="d">冬</option>
+    </select>
+    <select>
+        <!-- option的一些属性 -->
+        <option value="e" disabled>大</option>
+        <option value="f">小</option>
+        <option value="g">多</option>
+        <option value="h">少</option>
+    </select>
+    <select>
+        <option value="e">大</option>
+        <option value="f">小</option>
+        <option value="g" selected>多</option>
+        <option value="h">少</option>
+    </select>
+    <select>
+        <option value="hu">是</option>
+        <option value="ying">否</option>
+    </select>
+</body>
+</html>

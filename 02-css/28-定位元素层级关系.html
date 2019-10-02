@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:200px;
+        height:200px;
+        background:red;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    div:first-child{
+        z-index:1;
+    }
+    /* 
+     同时定位（绝对定位或固定定位）
+            在HTML结构中，靠下的元素层级更高
+            所有定位的元素 z-index都是 0
+
+            当z-index不一致时，值越大，层级越靠上
+     */
+</style>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+        text-align:center 对块级元素使用，使块级元素内的文本，行内元素，行内块元素居中
+     */
+    .g{
+        text-align:center;
+    }
+    .one{
+        width:300px;
+    }
+    .a{
+        display:inline-block;
+        width:300px;
+        text-align:center;
+    }
+    /* 
+        margin:0 auto;对有宽度的块级元素使用
+     */
+     .b{
+        margin:0 auto;
+        width:400px;
+    } 
+    .c{
+        margin:0 auto;
+        width:400px;
+    } 
+    .d{
+        display:inline-block;
+        margin:0 auto;
+        width:400px;
+    } 
+</style>
+<br>
+    <div class="g">
+        <span class="a">内容内容内容</span>
+        <div class="one">占一行占一行</div>
+    </div>
+    <div class="b">块</div>
+    <span class="c">行内元素宽高无效，无法使用margin居中</span><br/>
+    <span class="d">行内块不占一行，所以无法auto，不能居中</span>
+</body>
+</html>

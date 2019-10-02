@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动</title>
+</head>
+<style>
+    /*
+            float:left
+                none
+                right
+            float最早为了解决图片在文字中的环绕问题而出现的
+        
+            1、行内元素，不会出现在浮动元素的下面，贿紧贴浮动元素（word环绕型）
+            2、因为浮动，所以脱离文档流，原本在文档流中的元素会被浮动元素覆盖（块元素）
+                如果在html结构中，处在浮动元素下面的会被覆盖
+                在html结构中，处在浮动元素上面的会阻挡浮动元素覆盖
+            3、浮动元素需要设置宽度，不然默认为0
+            4、浮动后的元素都是块元素
+            
+            
+            浮动会引起两个问题
+            a.浮动元素宽度为零      解决：给浮动元素加宽度
+            b.父级塌陷   父级元素高度为0
+            解决：1.添加一个元素放在盒子最底部，将父元素高度撑起来
+                            {width：
+                            height：
+                            clear:both;}
+                            弊端：添加了不必要不想看的内容所以有了第二种方法
+                2.利用伪元素标签after
+                .a:after{
+                    content:"";
+                    visibility:hidden;
+                    line-height:0;
+                    height:0;
+                    display:block;
+                    clear:both;
+                    }
+                   .a {
+                        zoom:1;
+                    }
+                    一个都不能少
+    */
+    .a{
+        float:right;
+    }
+    .b{
+        float:left;/*第二行不浮动也是同样效果，第二行文字处于第一行。*/
+    }
+    .c{
+        width:100px;
+        height:100px;
+        background-image: url('../Default.jpg');
+        float:left;
+    }
+    .d{
+        width:200px;
+        height:200px;
+        background:red;
+        float:left;
+    }
+    .e{
+        width:900px;
+        height:200px;
+        background:blue;
+        float:left;
+    }
+</style>
+<body>
+    注意：<div class="a">第一行右浮动</div>
+    <div class="b">第二行左浮动</div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+</body>
+</html>

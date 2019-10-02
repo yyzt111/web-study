@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+     background-position
+                复合属性
+                background-position-x
+                background-position-y
+                有两个值
+                x方向移动 y方向移动
+                如果两个值都写，则第一个值代表x轴，第二个值代表y轴
+                如果只写一个值，代表x y轴移动距离相同
+
+                正负问题
+                值为正 朝正方向，值为负朝负方向
+
+                css中坐标系，x轴右边是正方向，y轴下边是正方向
+     */
+.a{
+    width:300px;
+    height:300px;
+    border:1px yellowgreen solid;
+    background-image: url('../Default.jpg');
+    background-position: 150px 200px;
+    background-attachment: scroll;
+}
+</style>
+<body>
+    <div class="a"></div>
+</body>
+</html>

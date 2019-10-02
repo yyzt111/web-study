@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+            父级添加overflow属性 overflow:hidden
+     */
+    .clear:after{
+        overflow:hidden;
+    }
+        .a{
+        width:100px;
+        height:100px;
+        background:rgb(92, 82, 82);
+    }
+    .b{
+        width:100px;
+        height:100px;
+        background:rgb(17, 16, 16);
+        float:left;
+    }
+    .c{
+        width:100px;
+        height:100px;
+        background:rgb(68, 18, 18);
+        float:left;
+    }
+</style>
+<body>
+    <div class="clear">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

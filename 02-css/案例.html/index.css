@@ -1,0 +1,68 @@
+body,div,p,span{
+    margin:0;
+}
+.card{
+    width:300px;
+}
+.content{
+    background:#fefefe;
+    padding:20px 16px 0px;
+}
+.card-head{
+    width:300px;
+    height:169px;
+}
+
+/*p{
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    font-family:"Microsoft YaHei";
+    padding:20px 29px 0;
+}
+span{
+    color:#c1b0c1;
+    font-size:20px;
+    text-align:center;
+    padding-top:13px;
+    padding-bottom:20px;
+
+}*/
+.card-body{
+    padding-bottom:24px;
+    border-bottom:1px solid #b1b1b1;
+}
+.card-foot{
+    padding:15px 17px 18px;
+    text-align:right;
+}
+.head{
+    font-size:20px;
+    color:#383838;
+    font-weight:700;
+    font-family:"Microsoft YaHei";/*也可以在这加margin-bottom*/
+}
+.span{
+    margin-top:13px;/*p是块元素可以设置margin-top*/
+    color:#b1b1b1;
+    font-size:14px;
+    font-family:"Microsoft YaHei";
+    line-height:22px;
+}
+a{
+    text-decoration:none;
+    color:#b1b1b1;
+    font-size:11px;
+    /*padding-right:25px;
+    background-image: url("./img2/Image-2.gif") no-repeat;
+    background-position:right center;
+    vertical-align:middle;*/
+}
+.icon{
+    display:inline-block;
+    width:12px;
+    height:11px;
+    background-image: url("./img2/Image-2.gif");
+    margin:0px 4px 0px 9px;
+    vertical-align:middle;
+}

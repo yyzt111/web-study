@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        width:200px;
+        height:200px;
+        margin-top:10px; 
+        margin-left:10px;
+        background:red;
+    }
+    .b{
+        /*  span无margin-top和margin-bottom(无pandding)   但有margin-left margin-right */
+        margin-top:5px;
+        margin-left:10px;
+    }
+    .c{
+        margin-top:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+        margin-left:20px;
+    }
+    .d{
+        /* margin-top距离上一个元素的距离 */
+        margin-top:20px;
+        margin-left:10px;
+    }
+</style>
+<body>
+    <span class="c">大小</span>
+    <div class="a">
+        <span class="b">b</span>
+        <div class="d">d</div>
+    </div>
+</body>
+</html>

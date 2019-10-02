@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器</title>
+</head>
+<style>
+    /*
+        标签选择器  
+            p{}
+        class选择器    
+            .class{}
+        ID选择器
+            #id{}
+        * 通配选择器
+            可以选择到所有的标签
+            不建议在真正项目中使用
+            样式要按需设置，不要浪费不必要的性能
+        群组选择器
+            选择器1，选择器2，选择器n {}
+            p,div,h1,h2,h3{}
+        后代选择器
+            .box span {}
+        子代选择器
+            .box > span {}
+        伪类选择器
+            link          未被点击的状态
+            visited       点击后的状态
+            hover         鼠标移入状态
+            active        鼠标点击状态
+
+    */
+     /* 如果要选择所有div及class为box的元素 */
+    /* div.box{
+        color:red;
+        font-size:24px;
+        background:black;
+        text-align:center;
+    } */
+    /*div[class="box"]{
+        color:red;
+        font-size:24px;
+        background:black;
+        text-align:center;
+    }*/
+   
+    
+    /*将div和p设置为宽300 高100的块
+            div背景色为#000000
+            p北京色为#ff0000
+    */
+    /*p,div{
+        width:300px;
+        height:100px;
+    }
+    div{
+        background:blue;
+    }
+    p{
+        background:yellow;
+    }*/
+
+    /*群组选择器
+div,p,span{
+    background:black;
+    color:white;
+    text-indent:2em;
+    text-align:justify;
+}
+*/
+    /*后代选择器*/
+/*body div{
+    color:red;
+}*/
+   /*子代选择器*/
+body>p{
+    color:rgb(12,86,55)
+}
+
+
+
+/*body{
+    width:100px;
+    height:100px;
+}
+body:hover{
+    background:red;
+} 
+body:active{
+    background:yellow;
+}  */
+</style>
+<body>
+    <div class="box">我是一条小虫，我是一条小虫。</div>
+    <div>我是一条小虫，我是一条小虫。</div>
+    <p  class="box">我是一条小虫，我是一条小虫。</p>
+    <div>我是一只蝴蝶，我是一只蝴蝶。</div>
+    <p>千里之行始于足下。</p>
+    <span>1</span>
+    <span>2</span>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .icon{
+        width:57px;
+        height:54px;
+        background-image: url('../sprite.png');
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .a{
+       background-position: 0 0;
+    }
+    .b{
+        background-position:-64px 0px;
+        
+    }
+    .c{
+        background-position:-128px 0px;
+        /* display:inline-block; */
+    }
+    .d{
+        background-position:-192px 0px;
+        /* display:inline-block; */
+    }
+</style>
+<body>
+    <!-- 
+        雪碧图
+            要取要显示的图片的选择框的做上角距离整张图片左上角的距离
+
+            因为当浏览器加载过的图片再次使用时就不需要请求了，所以用同一张雪碧图的相关背景，只需要请求一次即可
+
+     -->
+    <div>
+        <div class="icon a"></div>
+        <div class="icon b"></div>
+        <div class="icon c"></div>
+        <div class="icon d"></div>
+    </div>
+</body>
+</html>
